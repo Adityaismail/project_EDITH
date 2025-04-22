@@ -36,8 +36,8 @@
                             <table>
                                 @foreach ($sosialMedia as $item)
                                     <tr>
-                                        <td><a href="{{ $item->link }}"><i class="fa-brands fa-{{ $item->name }} fa-lg me-2"></i></a></td>
-                                        <td><a href="{{ $item->link }}">{{ $item->name }}</a></td>
+                                        <td><a href="{{ $item->url }} " target="_blank"><i class="fa-brands fa-{{ $item->name }} fa-lg me-2"></i></a></td>
+                                        <td><a href="{{ $item->url }} " target="_blank">{{ $item->name }}</a></td>
                                     </tr>
                                 @endforeach
                             </table>

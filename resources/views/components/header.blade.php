@@ -53,7 +53,7 @@
                             <li><a class="menu-item" href="{{ route('home') }}">Home</a></li>
                             <li><a class="menu-item" href="{{ route('produk') }}">Produk</a></li>
                             <li><a class="menu-item" href="{{ route('gallery') }}">Gallery</a></li>
-                            <li><a class="menu-item" href="{{ route('contact') }}">Contact</a></li>
+                            <li><a class="menu-item" href="{{ route('tentang') }}">Tentang Kami</a></li>
                         </ul>
                         <!-- mainmenu end -->
                     </div>

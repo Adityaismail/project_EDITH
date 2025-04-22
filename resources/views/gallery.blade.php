@@ -34,8 +34,9 @@
 
             <div id="top"></div>
 
-            <section id="subheader" class="relative bg-light">
+            <section id="subheader" class="relative jarallax text-black">
                 @foreach ($header as $item)
+                <img src="{{ asset('images/background/10.webp') }}" class="jarallax-img" alt="">
                 <div class="container relative z-index-1000">
                     <div class="row">
                         <div class="col-lg-6">
@@ -48,7 +49,6 @@
                         </div>
                     </div>
                 </div>
-                <img src="{{ asset('images/logo-wm.webp') }}" class="abs end-0 bottom-0 z-2 w-20" alt="">
                 @endforeach
             </section>
 
