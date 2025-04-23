@@ -59,7 +59,7 @@
                     </div>
                     <div class="de-flex-col">
                         <div class="menu_side_area">          
-                            <a href="#" class="btn-main btn-sm">Explore</a>
+                            <a href="{{ route('produk') }}" class="btn-main btn-sm">Explore</a>
                         </div>
                         <span id="menu-btn"></span>
                     </div>

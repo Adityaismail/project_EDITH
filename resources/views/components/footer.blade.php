@@ -23,10 +23,10 @@
                         <div class="widget">
                             <h5>Navigation</h5>
                             <ul>                                        
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Produk</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="{{ route('home') }}">Home</a></li>
+                                <li><a href="{{ route('produk') }}">Produk</a></li>
+                                <li><a href="{{ route('gallery') }}">Gallery</a></li>
+                                <li><a href="{{ route('tentang') }}">Tentang Kami</a></li>
                             </ul>
                         </div>
                     </div>

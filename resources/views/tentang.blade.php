@@ -58,7 +58,7 @@
                             <div class="subtitle wow fadeInUp mb-3">Story</div>
                             <h2 class=" wow fadeInUp" data-wow-delay=".2s">Crafting Beautiful Gardens Since '99</h2>
                             <p class="wow fadeInUp">Established in 1999, our garden service has been transforming outdoor spaces into thriving, beautiful landscapes for over two decades. With a commitment to quality and personalized care, our experienced team offers a full range of services, from design to maintenance, ensuring your garden flourishes in every season.</p>
-                            <a class="btn-main wow fadeInUp" href="#" data-wow-delay=".6s">Lihat Gallery</a>
+                            <a class="btn-main wow fadeInUp" href="#" data-wow-delay=".6s">Lihat</a>
                         </div>
 
                         <div class="col-lg-6">
@@ -103,35 +103,11 @@
             </section>
 
             <section class="jarallax">
-                <img src="{{ asset('images/background/4.webp') }}" class="jarallax-img" alt="">
+                <img src="{{ asset('images/shop/slider/bg.webp') }}" class="jarallax-img" alt="">
                 <div class="container relative z-2">
                     <div class="row justify-content-center">
                         <div class="col-lg-10 text-center">
                             <div class="owl-single-dots owl-carousel owl-theme">
-                                <div class="item">
-                                    <i class="icofont-quote-left fs-40 mb-4 wow fadeInUp id-color-2"></i>
-                                    <h3 class="mb-4 wow fadeInUp fs-32">Experience unparalleled luxury and personalized service at Gardyn Hotel, where every stay is a journey into sophistication, comfort, and 
-                                    unforgettable memories.</h3>
-                                    <img src="{{ asset('images/testimonial/1.webp') }}" class="circle w-80px mb-3" alt="">
-                                    <div class="wow fadeInUp">Donette Fondren</div>
-                                </div>
-
-                                <div class="item">
-                                    <i class="icofont-quote-left fs-40 mb-4 wow fadeInUp id-color-2"></i>
-                                    <h3 class="mb-4 wow fadeInUp fs-32">Experience unparalleled luxury and personalized service at Gardyn Hotel, where every stay is a journey into sophistication, comfort, and 
-                                    unforgettable memories.</h3>
-                                    <img src="{{ asset('images/testimonial/1.webp') }}" class="circle w-80px mb-3" alt="">
-                                    <div class="wow fadeInUp">Donette Fondren</div>
-                                </div>
-
-                                <div class="item">
-                                    <i class="icofont-quote-left fs-40 mb-4 wow fadeInUp id-color-2"></i>
-                                    <h3 class="mb-4 wow fadeInUp fs-32">Experience unparalleled luxury and personalized service at Gardyn Hotel, where every stay is a journey into sophistication, comfort, and 
-                                    unforgettable memories.</h3>
-                                    <img src="{{ asset('images/testimonial/1.webp') }}" class="circle w-80px mb-3" alt="">
-                                    <div class="wow fadeInUp">Donette Fondren</div>
-                                </div>
-
                                 <div class="item">
                                     <i class="icofont-quote-left fs-40 mb-4 wow fadeInUp id-color-2"></i>
                                     <h3 class="mb-4 wow fadeInUp fs-32">Experience unparalleled luxury and personalized service at Gardyn Hotel, where every stay is a journey into sophistication, comfort, and 
@@ -149,8 +125,7 @@
                 <div class="container">
                     <div class="row g-4 mb-3 align-items-center justify-content-center">
                         <div class="col-lg-6 text-center">
-                            <div class="subtitle wow fadeInUp">Why Choose Us</div>
-                            <h2 class="text-uppercase wow fadeInUp" data-wow-delay=".2s">Our Commitment to <span class="id-color-2">Excellence</span></h2>
+                            <h2 class="fadeInUp" data-wow-delay=".2s">Komitmen Kami untuk <span class="id-color-2">Menjaga Keindahan</span></h2>
                         </div>                        
                     </div>
                     <div class="row g-4">
@@ -159,8 +134,8 @@
                                 <img src="{{ asset('images/logo-icon.webp') }}" class="w-50px mb-3" alt="">
                                 <div class="abs m-3 top-0 end-0 p-2 rounded-2 mb-3">01</div>
                                 <div>
-                                    <h4>Expertise and Experience</h4>
-                                    <p class="mb-0">With years of hands-on experience, our team of professional gardeners and landscapers bring a wealth of knowledge to every project.</p>
+                                    <h4>Keahlian dan Pengalaman</h4>
+                                    <p class="mb-0">Dengan pengalaman tahunan, tim profesional kami yang berpengalaman membawa kekayaan pengetahuan ke setiap proyek.</p>
                                 </div>
                             </div>
                         </div>
@@ -170,8 +145,8 @@
                                 <img src="{{ asset('images/logo-icon.webp') }}" class="w-50px mb-3" alt="">
                                 <div class="abs m-3 top-0 end-0 p-2 rounded-2 mb-3">02</div>
                                 <div>
-                                    <h4>Personalized Service</h4>
-                                    <p class="mb-0">We believe that every garden is unique, just like its owner. We take the time to understand your vision, preferences, and the specific needs.</p>
+                                    <h4>Layanan Personalisasi</h4>
+                                    <p class="mb-0">Kami percaya bahwa setiap taman adalah unik, seperti pemiliknya. Kami mengambil waktu untuk memahami visi, preferensi, dan kebutuhan spesifik Anda.</p>
                                 </div>
                             </div>
                         </div>
@@ -181,41 +156,41 @@
                                 <img src="{{ asset('images/logo-icon.webp') }}" class="w-50px mb-3" alt="">
                                 <div class="abs m-3 top-0 end-0 p-2 rounded-2 mb-3">03</div>
                                 <div>
-                                    <h4>Comprehensive Solutions</h4>
-                                    <p class="mb-0">From garden design and installation to regular maintenance and specialty services, we offer a full range of garden services.</p>
+                                    <h4>Solusi Komprehensif</h4>
+                                    <p class="mb-0">Dari desain dan instalasi taman hingga perawatan rutin dan layanan khusus, kami menawarkan berbagai layanan taman.</p>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="col-lg-4 col-md-6 wow fadeInUp">
-                            <div class="relative h-100 bg-color-2 text-light padding30 rounded-1">
+                            <div class="relative h-100 bg-color text-light padding30 rounded-1">
                                 <img src="{{ asset('images/logo-icon.webp') }}" class="w-50px mb-3" alt="">
                                 <div class="abs m-3 top-0 end-0 p-2 rounded-2 mb-3">04</div>
                                 <div>
-                                    <h4>Quality Workmanship</h4>
-                                    <p class="mb-0">Our commitment to quality is evident in every service we provide. We use only the best materials, plants, and tools to your garden.</p>
+                                    <h4>Kualitas Pekerjaan</h4>
+                                    <p class="mb-0">Komitmen kami pada kualitas terlihat dalam setiap layanan yang kami berikan. Kami menggunakan bahan terbaik, tanaman, dan alat untuk taman Anda.</p>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="col-lg-4 col-md-6 wow fadeInUp">
-                            <div class="relative h-100 bg-color-2 text-light padding30 rounded-1">
+                            <div class="relative h-100 bg-color text-light padding30 rounded-1">
                                 <img src="{{ asset('images/logo-icon.webp') }}" class="w-50px mb-3" alt="">
                                 <div class="abs m-3 top-0 end-0 p-2 rounded-2 mb-3">05</div>
                                 <div>
-                                    <h4>Eco-Friendly Practices</h4>
-                                    <p class="mb-0">We are dedicated to environmentally sustainable practices. Our organic gardening methods, water-wise landscaping, and  waste management.</p>
+                                    <h4>Praktik Ramah Lingkungan</h4>
+                                    <p class="mb-0">Kami berkomitmen pada praktik yang ramah lingkungan. Metode pertanian organik kami, pengaturan lahan yang hemat air, dan pengelolaan sampah.</p>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="col-lg-4 col-md-6 wow fadeInUp">
-                            <div class="relative h-100 bg-color-2 text-light padding30 rounded-1">
+                            <div class="relative h-100 bg-color text-light padding30 rounded-1">
                                 <img src="{{ asset('images/logo-icon.webp') }}" class="w-50px mb-3" alt="">
                                 <div class="abs m-3 top-0 end-0 p-2 rounded-2 mb-3">06</div>
                                 <div>
-                                    <h4>Satisfaction Guarantee</h4>
-                                    <p class="mb-0">Our top priority is your satisfaction. We take pride in our work, and our many happy customers are a testament to the quality and care.</p>
+                                    <h4>Garansi Kepuasan</h4>
+                                    <p class="mb-0">Prioritas utama kami adalah kepuasan Anda. Kami bangga dengan pekerjaan kami, dan banyak pelanggan yang senang adalah bukti kualitas dan perhatian.</p>
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <title>Gardyn — Plants Store</title>
@@ -122,7 +122,7 @@
                         <div class="col-lg-12">
                             <div class="owl-custom-nav menu-" data-target="#new-arrivals-carousel">
                                 <div class="d-flex justify-content-between">
-                                    <h3 class="text-uppercase mb-4">Best Seller</h3>
+                                    <h3 class="mb-4">Best Seller</h3>
                                     <div class="arrow-simple">
                                         <a class="btn-prev"></a> 
                                         <a class="btn-next"></a>
@@ -181,7 +181,7 @@
                         <div class="col-lg-12">
                             <div class="owl-custom-nav menu-" data-target="#today-deals-carousel">
                                 <div class="d-flex justify-content-between">
-                                    <h3 class="text-uppercase mb-4">New Produk</h3>
+                                    <h3 class="mb-4">New Produk</h3>
                                     <div class="arrow-simple">
                                         <a class="btn-prev"></a> 
                                         <a class="btn-next"></a>
@@ -276,7 +276,7 @@
                         <div class="col-lg-12">
                             <div class="owl-custom-nav menu-" data-target="#best-seller-carousel">
                                 <div class="d-flex justify-content-between">
-                                    <h3 class="text-uppercase mb-4">Promo</h3>
+                                    <h3 class="mb-4">Promo</h3>
                                     <div class="arrow-simple">
                                         <a class="btn-prev"></a> 
                                         <a class="btn-next"></a>
