@@ -68,28 +68,10 @@
                                         <div class="col-lg-12">
                                             <img src="{{ asset('images/misc/3.webp') }}" class="w-100 rounded-1 wow zoomIn" alt="">
                                         </div>
-                                        <div class="col-lg-12">
-                                            <div class="rounded-1 relative bg-color-2 text-light p-4">
-                                                <img src="{{ asset('images/icons/tree.png') }}" class="abs abs-middle w-60px" alt="">
-                                                <div class="de_count ps-80 wow fadeInUp">
-                                                    <h2 class="mb-0 fs-32"><span class="timer" data-to="2025" data-speed="3000"></span></h2>
-                                                    <span class="op-7">Tahun Berdiri</span>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="row g-4">
-                                        <div class="col-lg-12">
-                                            <div class="rounded-1 relative bg-color-2 text-light p-4">
-                                                <img src="{{ asset('images/icons/happy.png') }}" class="abs abs-middle w-60px" alt="">
-                                                <div class="de_count ps-80 wow fadeInUp">
-                                                    <h2 class="mb-0 fs-32"><span class="timer" data-to="850" data-speed="3000"></span>+</h2>
-                                                    <span class="op-7">Pelanggan</span>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="col-lg-12">
                                             <img src="{{ asset('images/misc/4.webp') }}" class="w-100 rounded-1 wow zoomIn" alt="">
                                         </div>
@@ -109,11 +91,10 @@
                         <div class="col-lg-10 text-center">
                             <div class="owl-single-dots owl-carousel owl-theme">
                                 <div class="item">
-                                    <i class="icofont-quote-left fs-40 mb-4 wow fadeInUp id-color-2"></i>
+                                    <img src="{{ asset('images/testimonial/1.webp') }}" class="circle w-150px mb-3" alt="">
+                                    <div class="wow fadeInUp">Donette Fondren</div>
                                     <h3 class="mb-4 wow fadeInUp fs-32">Experience unparalleled luxury and personalized service at Gardyn Hotel, where every stay is a journey into sophistication, comfort, and 
                                     unforgettable memories.</h3>
-                                    <img src="{{ asset('images/testimonial/1.webp') }}" class="circle w-80px mb-3" alt="">
-                                    <div class="wow fadeInUp">Donette Fondren</div>
                                 </div>
                             </div>
                         </div>
