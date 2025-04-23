@@ -3,9 +3,9 @@
 namespace App\Filament\Clusters\HalamanTentangKami\Resources;
 
 use App\Filament\Clusters\HalamanTentangKami;
-use App\Filament\Clusters\HalamanTentangKami\Resources\HeaderResource\Pages;
-use App\Filament\Clusters\HalamanTentangKami\Resources\HeaderResource\RelationManagers;
-use App\Models\HeaderTentangKami;
+use App\Filament\Clusters\HalamanTentangKami\Resources\KomitmenResource\Pages;
+use App\Filament\Clusters\HalamanTentangKami\Resources\KomitmenResource\RelationManagers;
+use App\Models\Komitmen;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,30 +13,29 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\MarkdownEditor;
-use Filament\Tables\Columns\IconColumn;
+use Filament\Forms\Components\Toggle;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Forms\Components\Split;
-use Filament\Forms\Components\Section;
+use Filament\Tables\Columns\IconColumn;
 use Filament\Forms\Components\Placeholder;
 use Illuminate\Support\HtmlString;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Split;
 use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Actions\Action;
-
-class HeaderResource extends Resource
+class KomitmenResource extends Resource
 {
-    protected static ?string $model = HeaderTentangKami::class;
+    protected static ?string $model = Komitmen::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $navigationLabel = 'Header';
+    protected static ?string $navigationLabel = 'Komitmen';
 
-    protected static ?string $recordTitleAttribute = 'header';
+    protected static ?string $recordTitleAttribute = 'title';
 
     protected static ?string $cluster = HalamanTentangKami::class;
 
@@ -46,12 +45,14 @@ class HeaderResource extends Resource
             ->schema([
                 Split::make([
                     Section::make([
-                        TextInput::make('header')
-                            ->label('Header')
-                            ->required(),
-                        MarkdownEditor::make('subheader')
-                            ->label('Sub Header')
-                            ->required(),
+                        TextInput::make('title')
+                            ->label('Judul')
+                            ->required()
+                            ->maxLength(255),
+                        MarkdownEditor::make('content')
+                            ->label('Konten')
+                            ->required()
+                            ->columnSpanFull(),
                         Toggle::make('is_active')
                             ->label('Status')
                             ->required(),
@@ -61,9 +62,9 @@ class HeaderResource extends Resource
                             ->label('Petunjuk Pengisian')
                             ->content(new HtmlString('
                                 <ul>
-                                    <li>1. <strong>Header:</strong> Masukkan header yang akan ditampilkan di halaman produk.</li>
-                                    <li>2. <strong>Sub Header:</strong> Masukkan sub header yang akan ditampilkan di halaman produk.</li>
-                                    <li>3. <strong>Status:</strong> Aktifkan status untuk menampilkan informasi di halaman produk.</li>
+                                    <li>1. <strong>Judul:</strong> Masukkan judul komitmen.</li>
+                                    <li>2. <strong>Konten:</strong> Masukkan konten komitmen.</li>
+                                    <li>3. <strong>Status:</strong> Aktifkan status untuk menampilkan informasi di halaman komitmen.</li>
                                 </ul>
                             '))
                     ])->grow(),
@@ -81,11 +82,8 @@ class HeaderResource extends Resource
                 IconColumn::make('is_active')
                     ->label('Status')
                     ->boolean(),
-                TextColumn::make('header')
-                    ->label('Header')
-                    ->searchable(),
-                TextColumn::make('subheader')
-                    ->label('Sub Header')
+                TextColumn::make('title')
+                    ->label('Judul')
                     ->searchable(),
                 TextColumn::make('created_at')
                     ->label('Tanggal Dibuat')
@@ -93,7 +91,7 @@ class HeaderResource extends Resource
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('updated_at')
-                    ->label('Tanggal Diubah')
+                    ->label('Tanggal Diperbarui')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
@@ -119,7 +117,6 @@ class HeaderResource extends Resource
                     ->color('info')
                     ->icon('heroicon-o-magnifying-glass-plus')
                     ->tooltip('View')
-                    ->modalHeading(fn (): string => 'Informasi Produk')
                     ->hiddenLabel()
                     ->slideOver(),
                 EditAction::make()
@@ -151,9 +148,9 @@ class HeaderResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListHeaders::route('/'),
-            'create' => Pages\CreateHeader::route('/create'),
-            'edit' => Pages\EditHeader::route('/{record}/edit'),
+            'index' => Pages\ListKomitmens::route('/'),
+            'create' => Pages\CreateKomitmen::route('/create'),
+            'edit' => Pages\EditKomitmen::route('/{record}/edit'),
         ];
     }
 }

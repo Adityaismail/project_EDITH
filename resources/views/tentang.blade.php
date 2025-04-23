@@ -106,7 +106,7 @@
                 <div class="container">
                     <div class="row g-4 mb-3 align-items-center justify-content-center">
                         <div class="col-lg-6 text-center">
-                            <h2 class="fadeInUp" data-wow-delay=".2s">Komitmen Kami untuk <span class="id-color-2">Menjaga Keindahan</span></h2>
+                            <h2 class="fadeInUp" data-wow-delay=".2s">Komitmen Kami</h2>
                         </div>                        
                     </div>
                     <div class="row g-4">
